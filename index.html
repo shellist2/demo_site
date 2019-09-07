@@ -6,29 +6,42 @@
   <link href="css/style.css" rel="stylesheet">
   <title>#</title>
 </head>
+
 <body>
-<script>
-function save(){
-  localStorage.data='Веб хранилище это более функциональная альтернатива cookie';
-}  
-</script>
-<form action="#">
-<input type="email" placeholder="Введите ваш Email">
-<input type="password" placeholder="Введи ваше пароль" required="Введи ваше пароль">
-<input type="submit" name="submit" value="Отправить">
-<br>
-Выберите глобальное время и дату: <input type='datetime-local' /><br />
-Time <input type="time">
-<br />
-<input type="color">
-</form>
-<script>
- // sessionStorage.html="html5 предоставляет множество возможностей";
-///sessionStorage.wisdomweb='Вы изучаете html на wisdomweb.ru';
+  <script>
+    function save() {
+      localStorage.data = 'Веб хранилище это более функциональная альтернатива cookie';
+      alert('Строка веб хранище -- это более функциональная альтернатива cookie');
+    }
 
-//document.write(sessionStorage.html + '<br />');
-//document.write(sessionStorage.wisdomweb);
-</script>
+    function load() {
+      alert(localStorage.data);
+    }
+  </script>
+  <img src="/img/gimg3.gif" draggable="true">
+
+
+  <form action="#">
+    <input type="email" placeholder="Введите ваш Email">
+    <input type="password" placeholder="Введи ваше пароль" required="Введи ваше пароль">
+    <input type="submit" name="submit" value="Отправить">
+    <br>
+    Выберите глобальное время и дату: <input type='datetime-local' /><br />
+    Time <input type="time">
+    <br />
+    <input type="color">
+    <br>
+    <input type="button" value="Save Date" onclick="save()">
+    <input type="button" value="Insert Date" onclick="load()">
+
+  </form>
+  <script>
+    // sessionStorage.html="html5 предоставляет множество возможностей";
+    ///sessionStorage.wisdomweb='Вы изучаете html на wisdomweb.ru';
+
+    //document.write(sessionStorage.html + '<br />');
+    //document.write(sessionStorage.wisdomweb);
+  </script>
 </body>
-</html>
 
+</html>
