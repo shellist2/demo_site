@@ -1,30 +1,9 @@
-body {
-background-image: url('/img/1.jpg');
-
-
+.container {
+display: inline-block;
+width: 200px;
+height: 100px;
 }
 
-#test {
-transform: scale(0.5);
-transition: 5s all;
-
-
-background-color: white;
-padding: 75px;
-margin: 15px;
-color: black;
-border:7px solid #2f3841;
-border-radius: 50px;
-opacity: 0.9;
-box-shadow: 3px 5px 10px #2f3841;
-height: 300px;
-display: block;
-text-align: center;
-font-size: 30px;
-font-weight: 1000;
-}
-
-#test:hover {
-transform: rotate(45deg) scale(0.3);
-
+a {
+   width: 500px; 
 }
